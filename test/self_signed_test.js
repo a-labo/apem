@@ -20,7 +20,9 @@ describe('self-signed', function () {
   }))
 
   it('Self signed', () => co(function * () {
-
+    let { key, cert } = yield selfSigned()
+    assert.ok(key)
+    assert.ok(cert)
   }))
 })
 

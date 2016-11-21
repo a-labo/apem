@@ -82,7 +82,7 @@ const writeout = require('writeout')
 
 co(function * () {
   {
-    let { key, cert } = selfSigned
+    let { key, cert } = yield selfSigned()
     yield writeout('www.example.com.crt', cert)
     yield writeout('www.example.com.key', key)
   }
