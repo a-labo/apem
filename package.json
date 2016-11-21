@@ -1,6 +1,6 @@
 {
   "name": "apem",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pem generator",
   "main": "lib",
   "scripts": {
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/a-labo/apem#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "pem": "^1.8.3"
+    "pem": "^1.8.3",
+    "writeout": "^2.1.0"
   },
   "devDependencies": {
     "aglob": "^1.1.1",
