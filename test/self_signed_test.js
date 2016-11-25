@@ -23,7 +23,12 @@ describe('self-signed', function () {
     let { key, cert } = yield selfSigned()
     assert.ok(key)
     assert.ok(cert)
+
+    let filename = `${__dirname}/../tmp/foo/testing-certs`
+    yield selfSigned.generate(filename)
+    assert.ok(selfSigned.exists(filename))
   }))
+
 })
 
 /* global describe, before, after, it */
